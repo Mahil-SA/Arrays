@@ -3,7 +3,7 @@
 //PRN -  23070123080
 //Batch -  ENTC B1
 
-//Program 1 (To search the poisition of an element in an array.)
+//Program 1 (To search the position of an element in an array.)
 #include<iostream>
 using namespace std;
 int main()
