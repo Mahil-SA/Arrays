@@ -7,8 +7,11 @@ This repository contains experiments 7, 8 which are related to __Arrays & String
 To study and implement C++ Arrays and Strings
 ## Theory:
 In C++, an array is a collection of elements of the same data type stored in contiguous memory locations. Arrays allow easy access to multiple elements using an index, starting from 0. The size of an array is fixed at the time of declaration and cannot be changed.
+
 For example:
+
 `int numbers[5] = {1, 2, 3, 4, 5};`
+
 Here, `numbers` is an array of 5 integers. Arrays can be single-dimensional (like a list) or multi-dimensional (like a matrix). Arrays are useful for managing large amounts of data efficiently but lack dynamic resizing.
 
 ~~~
