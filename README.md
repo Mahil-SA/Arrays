@@ -13,3 +13,14 @@
 
 ### Program 4:
 ![image](https://github.com/user-attachments/assets/0b713aa7-d72e-4bd9-b6c5-972b2628fd6e)
+
+## Experiment 8:
+
+### Program 1:
+![image](https://github.com/user-attachments/assets/df94ac37-0990-4a54-9104-25962aa4730c)
+
+### Program 2:
+![image](https://github.com/user-attachments/assets/6d8d8b19-8402-4f28-88d1-32d4b1c6f365)
+
+### Program 3:
+![image](https://github.com/user-attachments/assets/95712dc5-2ab6-42d6-b979-49d7a2a14d80)
