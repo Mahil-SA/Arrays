@@ -1,4 +1,4 @@
-# Output:
+# Outputs:
 
 ## Experiment 7:
 
