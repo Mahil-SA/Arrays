@@ -11,7 +11,7 @@
 ### Program 3 (Reverse a string):
 ![image](https://github.com/user-attachments/assets/01ac948b-f4da-488a-ac73-3150db06b5d8)
 
-### Program 4 (
+### Program 4 (Check if a string is a palindrome):
 ![image](https://github.com/user-attachments/assets/0b713aa7-d72e-4bd9-b6c5-972b2628fd6e)
 
 ## Experiment 8:
