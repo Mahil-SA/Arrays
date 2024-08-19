@@ -10,13 +10,21 @@ In C++, strings are sequences of characters represented by the `std::string` cla
 Key operations of strings include:
 
 1. Length: Returns the number of characters in the string.
+
    `str.length();`
-2. Concatenation: Combines two strings.
+   
+3. Concatenation: Combines two strings.
+
    `str1 + str2;`
-3. Accessing Characters: Uses the `[]` operator.
+   
+5. Accessing Characters: Uses the `[]` operator.
+
    `char ch = str[0];`
-4. Substrings: Extracts a part of the string.
+   
+7. Substrings: Extracts a part of the string.
+
    `str.substr(start, length);`
+
 Strings in C++ are dynamic, meaning they can grow or shrink in size as needed, making them powerful for text manipulation.
 
 ~~~
