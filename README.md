@@ -16,11 +16,11 @@
 
 ## Experiment 8:
 
-### Program 1:
+### Program 1 (Search Elements):
 ![image](https://github.com/user-attachments/assets/df94ac37-0990-4a54-9104-25962aa4730c)
 
-### Program 2:
+### Program 2 (Sum and Average of elements):
 ![image](https://github.com/user-attachments/assets/6d8d8b19-8402-4f28-88d1-32d4b1c6f365)
 
-### Program 3:
+### Program 3 (Min and max value in an array):
 ![image](https://github.com/user-attachments/assets/95712dc5-2ab6-42d6-b979-49d7a2a14d80)
