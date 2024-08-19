@@ -2,7 +2,7 @@
 This repository contains experiments 7, 8 which are related to __Arrays & Strings__ in C++.
 
 # Arrays
-# EXPERIMENT 7 (Program 1):
+# EXPERIMENT 7:
 ## Aim: 
 To study and implement C++ Arrays and Strings
 ## Theory:
