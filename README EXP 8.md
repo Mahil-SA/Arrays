@@ -104,3 +104,6 @@ int main()
     return 0;
 }
 ~~~
+
+# Conclusion
+In this experiment we learn about arrays in C++, how to find out position of elements, min and max value in an array, etc.
