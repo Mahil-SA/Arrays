@@ -71,7 +71,7 @@ int main()
     return 0;
 }
 
-//Program 4 (Find wether a string is a palindrome or not)
+//Program 4 (Find whether a string is a palindrome or not)
 #include<iostream>
 using namespace std;
 int main()
@@ -97,3 +97,6 @@ int main()
     return 0;
 }
 ~~~
+
+# Conclusion
+In this experiment we leant about strings and made programs based on strings to concatenate, reverse it, etc.
