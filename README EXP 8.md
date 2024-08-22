@@ -4,7 +4,7 @@ This repository contains experiments 7, 8 which are related to __Arrays & String
 # Arrays
 # EXPERIMENT 8:
 ## Aim: 
-To study and implement C++ Arrays and Strings
+To study and implement 2D Arrays (Matrices)
 ## Theory:
 In C++, an array is a collection of elements of the same data type stored in contiguous memory locations. Arrays allow easy access to multiple elements using an index, starting from 0. The size of an array is fixed at the time of declaration and cannot be changed.
 
