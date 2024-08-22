@@ -197,6 +197,8 @@ int main()
 # Conclusion
 In this experiment we leant about strings and made programs based on strings to concatenate, reverse it, etc.
 
+We also learn about arrays in C++, how to find out position of elements, min and max value in an array, etc.
+
 # Outputs
 
 ## Experiment 7:
