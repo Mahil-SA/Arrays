@@ -134,9 +134,9 @@ int main()
 
 ~~~
 
-### Conclusion
+## Conclusion
 
-### Outputs
+## Outputs
 
 ## Program 1 (To display a matrix.)
 ![image](https://github.com/user-attachments/assets/73da204b-0998-458c-8ff0-b5f37c63ca10)
