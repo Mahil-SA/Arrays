@@ -17,93 +17,103 @@ Here, `numbers` is an array of 5 integers. Arrays can be single-dimensional (lik
 ~~~
 CODE:
 
-//Program 1 (To search the position of an element in an array.)
+//Program 1 (To display a matrix.)
 #include<iostream>
 using namespace std;
 int main()
 {
-    int n,b;
-    cout<<"Enter the number of arrays: ";
-    cin>>n;
-    int a[n];
-    cout<<"Enter the elements of the array: ";
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-    cout<<"Enter the elements to be searced: ";
-    cin>>b;
-    for(int i=0;i<n;i++)
-    {
-        if(a[i]==b)
+    int i, j, row, col;
+    cout<<"Enter the rows: ";
+    cin>>row;
+    cout<<"Enter the columns: ";
+    cin>>col;
+        int arr[row][col];
+        for (i=0;i<row;i++)
         {
-            cout<<i;
+            for (j=0;j<col;j++)
+            {
+                cout<<"Enter elements("<<i<<","<<j<<")";
+                cin>>arr[i][j];
+            }
         }
-    }
+        for (i=0;i<row;i++)
+        {
+            for (j=0;j<col;j++)
+            {
+                cout<<arr[i][j];
+            }
+            cout<<endl;
+        }
 }
 
-//Program 2 (To find the sum and average of a given array.)
+//Program 2 (To find the sum and multiplication of a user input matrix.)
 #include<iostream>
 using namespace std;
 int main()
 {
-    int n,b;
-    float sum=0;
-    float avg=0;
-    cout<<"Enter the number of arrays: ";
-    cin>>n;
-    int a[n];
-    cout<<"Enter the elements of the array: ";
-    for(int i=0;i<n;i++)
+    int i, j, k, row, col, r1, c1, r2, c2;
+   cout<<"Enter the rows and columns: ";
+   cin>>r1>>c1;
+   int arr1[r1][c1];
+    for(i=0;i<r1;i++)
     {
-        cin>>a[i];
-    }
-    for(int i=0;i<n;i++)
-    {
-        sum=a[i]+sum;
-    }
-    cout<<"The sum of the given array is "<<sum<<endl;
-    {
-        avg=sum/n;
-    }
-    cout<<"The average of the elements in the given array is "<<avg<<endl;
-}
-
-//Program 3 (To find maximum and minimum element in an array.)
-#include<iostream>
-using namespace std;
-int main()
-{
-    int n,b;
-    cout<<"Enter the number of arrays: ";
-    cin>>n;
-    int a[n];
-    cout<<"Enter the elements of the array: ";
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-    int max=a[0], min=a[0];
-    for(int i=0;i<n;i++)
-    {
-        if(min>a[i])
+        for(j=0;j<c1;j++)
         {
-            min = a[i];
+            cout<<"Enter the elements ("<<i<<","<<j<<")";
+            cin>>arr1[i][j];
         }
     }
-    cout<<"The minimum value of the array is: "<<min<<endl;
-
-    for(int i=0;i<n;i++)
+    cout<<"Enter the rows and columns: ";
+    cin>>r2>>c2;
+    int arr2[r2][c2];
+    for(i=0;i<r2;i++)
     {
-        if(max<a[i])
+        for(j=0;j<c2;j++)
         {
-            max = a[i];
+            cout<<"Enter the elements ("<<i<<","<<j<<")";
+            cin>>arr2[i][j];
         }
     }
-    cout<<"The maximum value of the array is: "<<max<<endl;
-    return 0;
+    //Sum of 2 matrices.
+    int sum[r1][c1];
+    cout<<"Sum of the 2 matrices is: \n";
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+          sum[i][j]=arr1[i][j]+arr2[i][j];
+        }
+    }
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+            cout<<sum[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    //Multiplication of 2 matrices.
+    int mul[r1][c2];
+    cout<<"Multiplication of the 2 matrices is: \n";
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c2;j++)
+        {
+          mul[i][j]=0;
+          for(k=0;k<c1;k++)
+          {
+              mul[i][j]+=arr1[i][k]+arr2[k][j];
+          }
+        }
+    }
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c2;j++)
+        {
+            cout<<mul[i][j]<<" ";
+        }
+        cout<<endl;
+    } 
 }
-~~~
 
-# Conclusion
-In this experiment we learn about arrays in C++, how to find out position of elements, min and max value in an array, etc.
+//Program 3 (To add diagonal elements of a matrix.)
