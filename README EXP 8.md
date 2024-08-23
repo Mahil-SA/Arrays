@@ -138,10 +138,10 @@ int main()
 
 ### Outputs
 
-//Program 1 (To display a matrix.)
+## Program 1 (To display a matrix.)
 ![image](https://github.com/user-attachments/assets/73da204b-0998-458c-8ff0-b5f37c63ca10)
 
-//Program 2 (To add and multiply a matrix.)
+## Program 2 (To add and multiply a matrix.)
 ![image](https://github.com/user-attachments/assets/4a4b8f56-1ce2-49a9-a3a8-aa8d160eaaa5)
 
-//Program 3 (To add diagonal elements of the matrix.)
+## Program 3 (To add diagonal elements of the matrix.)
