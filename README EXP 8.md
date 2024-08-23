@@ -135,6 +135,7 @@ int main()
 ~~~
 
 ## Conclusion
+In C++ we have learnt to add, multiply and add diagonal elements of matrix while taking their user input.
 
 ## Outputs
 
