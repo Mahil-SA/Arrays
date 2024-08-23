@@ -75,6 +75,8 @@ int main()
         }
     }
     //Sum of 2 matrices.
+    if (i==j)
+    {
     int sum[r1][c1];
     cout<<"Sum of the 2 matrices is: \n";
     for(i=0;i<r1;i++)
@@ -92,7 +94,14 @@ int main()
         }
         cout<<endl;
     }
+    }
+    else
+    {
+        cout<<"The entered matrix cannot be added!";
+    }
     //Multiplication of 2 matrices.
+    if (c2==r1)
+    {
     int mul[r1][c2];
     cout<<"Multiplication of the 2 matrices is: \n";
     for(i=0;i<r1;i++)
@@ -114,6 +123,25 @@ int main()
         }
         cout<<endl;
     } 
+    }
+    else
+    {
+        cout<<"Entered matrix cannot be multiplied!"; 
+    }
 }
 
 //Program 3 (To add diagonal elements of a matrix.)
+
+~~~
+
+### Conclusion
+
+### Outputs
+
+//Program 1 (To display a matrix.)
+![image](https://github.com/user-attachments/assets/73da204b-0998-458c-8ff0-b5f37c63ca10)
+
+//Program 2 (To add and multiply a matrix.)
+![image](https://github.com/user-attachments/assets/4a4b8f56-1ce2-49a9-a3a8-aa8d160eaaa5)
+
+//Program 3 (To add diagonal elements of the matrix.)
