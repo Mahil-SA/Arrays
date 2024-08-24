@@ -150,9 +150,57 @@ The entered matrix cannot be added!Multiplication of the 2 matrices is:
 */
 
 //Program 3 (To add diagonal elements of a matrix.)
-
+#include<iostream>
+using namespace std;
+int main()
+{
+int i, j, r1, c1, sum1=0, sum2=0;
+cout<<"Enter the number of rows and columns of the matrix: ";
+cin>>r1>>c1;
+int arr1[r1][c1];
+if(r1!=c1)
+{
+    cout<<"Error! The number of rows must be equal to the number or columns!"<<endl;
+}
+else
+{
+    for(i=0;i<r1;i++)
+    {
+        for (j=0;j<c1;j++)
+        {
+            cout<<"Enter the elements ("<<i<< "," <<j<<"): ";
+            cin>>arr1[i][j];
+        }
+    }
+    for(i=0; i<r1; i++)
+    {
+        for (j=0 ; j<c1 ; j++)
+        {
+            if(i==j)
+            {
+                sum1 += arr1[i][j];
+            }
+            if (i+j == r1-1)
+            sum2 += arr1[i][j];
+        }
+    }
+    cout<< "Sum of diagonal elements are: "<<sum1<<endl;
+    cout<<"Sum of diagonal elements are: "<<sum2<<endl;
+}
+}
 
 //Output
 /*
-
+Enter the number of rows and columns of the matrix: 3 3
+Enter the elements (0,0): 1
+Enter the elements (0,1): 2
+Enter the elements (0,2): 3
+Enter the elements (1,0): 4
+Enter the elements (1,1): 5
+Enter the elements (1,2): 6
+Enter the elements (2,0): 7
+Enter the elements (2,1): 8
+Enter the elements (2,2): 9
+Sum of diagonal elements are: 15
+Sum of diagonal elements are: 15
 */
