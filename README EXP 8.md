@@ -74,64 +74,46 @@ int main()
             cin>>arr2[i][j];
         }
     }
-    //Sum of 2 matrices.
-    if (i==j)
-    {
-    int sum[r1][c1];
-    cout<<"Sum of the 2 matrices is: \n";
-    for(i=0;i<r1;i++)
-    {
-        for(j=0;j<c1;j++)
-        {
-          sum[i][j]=arr1[i][j]+arr2[i][j];
-        }
-    }
-    for(i=0;i<r1;i++)
-    {
-        for(j=0;j<c1;j++)
-        {
-            cout<<sum[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-    }
-    else
-    {
-        cout<<"The entered matrix cannot be added!";
-    }
-    //Multiplication of 2 matrices.
-    if (c2==r1)
-    {
-    int mul[r1][c2];
-    cout<<"Multiplication of the 2 matrices is: \n";
-    for(i=0;i<r1;i++)
-    {
-        for(j=0;j<c2;j++)
-        {
-          mul[i][j]=0;
-          for(k=0;k<c1;k++)
-          {
-              mul[i][j]+=arr1[i][k]+arr2[k][j];
-          }
-        }
-    }
-    for(i=0;i<r1;i++)
-    {
-        for(j=0;j<c2;j++)
-        {
-            cout<<mul[i][j]<<" ";
-        }
-        cout<<endl;
-    } 
-    }
-    else
-    {
-        cout<<"Entered matrix cannot be multiplied!"; 
-    }
-}
 
 //Program 3 (To add diagonal elements of a matrix.)
-
+#include<iostream>
+using namespace std;
+int main()
+{
+int i, j, r1, c1, sum1=0, sum2=0;
+cout<<"Enter the number of rows and columns of the matrix: ";
+cin>>r1>>c1;
+int arr1[r1][c1];
+if(r1!=c1)
+{
+    cout<<"Error! The number of rows must be equal to the number or columns!"<<endl;
+}
+else
+{
+    for(i=0;i<r1;i++)
+    {
+        for (j=0;j<c1;j++)
+        {
+            cout<<"Enter the elements ("<<i<< "," <<j<<"): ";
+            cin>>arr1[i][j];
+        }
+    }
+    for(i=0; i<r1; i++)
+    {
+        for (j=0 ; j<c1 ; j++)
+        {
+            if(i==j)
+            {
+                sum1 += arr1[i][j];
+            }
+            if (i+j == r1-1)
+            sum2 += arr1[i][j];
+        }
+    }
+    cout<< "Sum of diagonal elements are: "<<sum1<<endl;
+    cout<<"Sum of diagonal elements are: "<<sum2<<endl;
+}
+}
 ~~~
 
 ## Conclusion
@@ -146,3 +128,4 @@ In C++ we have learnt to add, multiply and add diagonal elements of matrix while
 ![image](https://github.com/user-attachments/assets/4a4b8f56-1ce2-49a9-a3a8-aa8d160eaaa5)
 
 ## Program 3 (To add diagonal elements of the matrix.)
+![image](https://github.com/user-attachments/assets/d9875b61-b65d-43f2-a382-366a07e03e67)
