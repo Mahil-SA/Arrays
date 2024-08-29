@@ -204,3 +204,53 @@ Enter the elements (2,2): 9
 Sum of diagonal elements are: 15
 Sum of diagonal elements are: 15
 */
+
+//Program 4 (Transpose of the matrix.)
+#include<iostream>
+using namespace std;
+int main()
+{
+     int i,j,row,col;
+   cout<<"Enter number of rows and columns: ";
+   cin>>row>>col;
+   
+   int arr[row][col],arr2[col][row];
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            cout<<"Enter the elements ("<<i<<","<<j<<")";
+            cin>>arr[i][j];
+             
+        }
+        
+    }
+      
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+             arr2[i][j]=arr[j][i]; 
+        }
+    
+    }
+     for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+              cout<<arr2[i][j]; 
+        }
+    cout<<endl;
+    }
+}
+
+//Output
+/*
+Enter number of rows and columns: 2 2
+Enter the elements (0,0)1
+Enter the elements (0,1)2
+Enter the elements (1,0)3
+Enter the elements (1,1)4
+13
+24
+*/
