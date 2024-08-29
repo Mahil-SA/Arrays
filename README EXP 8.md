@@ -114,6 +114,46 @@ else
     cout<<"Sum of diagonal elements are: "<<sum2<<endl;
 }
 }
+
+//Program 4 (Transpose of the matrix.)
+#include<iostream>
+using namespace std;
+int main()
+{
+     int i,j,row,col;
+   cout<<"Enter number of rows and columns: ";
+   cin>>row>>col;
+   
+   int arr[row][col],arr2[col][row];
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            cout<<"Enter the elements ("<<i<<","<<j<<")";
+            cin>>arr[i][j];
+             
+        }
+        
+    }
+      
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+             arr2[i][j]=arr[j][i]; 
+        }
+    
+    }
+     for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+              cout<<arr2[i][j]; 
+        }
+    cout<<endl;
+    }
+}
+
 ~~~
 
 ## Conclusion
@@ -129,3 +169,6 @@ In C++ we have learnt to add, multiply and add diagonal elements of matrix while
 
 ## Program 3 (To add diagonal elements of the matrix.)
 ![image](https://github.com/user-attachments/assets/d9875b61-b65d-43f2-a382-366a07e03e67)
+
+## Program 4 (Transpose of matrix.)
+![image](https://github.com/user-attachments/assets/81905d84-4d3f-431f-8eb8-c66da9d4e97e)
