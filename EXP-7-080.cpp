@@ -115,17 +115,19 @@ int main()
     {
         if(a[i]==b)
         {
-            cout<<i;
+            cout<<"The position of the element is: "<<i<<endl;
         }
     }
 }
 
 //Output
 /*
-Enter the number of arrays: 2
-Enter the elements of the array: 1 2
+Enter the number of arrays: 3
+Enter the elements of the array: 1
+2
+3
 Enter the elements to be searced: 2
-1
+The position of the element is: 1
 */
 
 //Program 2 (To find the sum and average of a given array.)
