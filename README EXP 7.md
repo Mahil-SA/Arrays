@@ -126,7 +126,7 @@ int main()
     {
         if(a[i]==b)
         {
-            cout<<i;
+            cout<<"The position of the element is: "<<i<<endl;
         }
     }
 }
@@ -218,7 +218,7 @@ We also learn about arrays in C++, how to find out position of elements, min and
 ## Experiment 7.1:
 
 ### Program 1 (Search Elements):
-![image](https://github.com/user-attachments/assets/df94ac37-0990-4a54-9104-25962aa4730c)
+![image](https://github.com/user-attachments/assets/16f51e09-257b-467d-b643-a5d5a7daa9e7)
 
 ### Program 2 (Sum and Average of elements):
 ![image](https://github.com/user-attachments/assets/6d8d8b19-8402-4f28-88d1-32d4b1c6f365)
