@@ -207,3 +207,53 @@ Enter the elements of the array: 1 4 7 6
 The minimum value of the array is: 1
 The maximum value of the array is: 7
 */
+
+//Program 4 (Number of occurences)
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n, i, j, s, c = 0, flag = 0;
+cout << "Enter the number of elements: ";
+cin >> n;
+int a[n];
+cout << "Enter array elements: ";
+for( i = 0; i<n ; i++)
+{
+    cin >> a[i];
+}
+cout << "Enter an element to be searched in an array: ";
+    cin >> s;
+for (j= 0 ; j<n; j++)
+{
+    if ( a[j]==s)
+    {
+cout<< "The element"<<" "<< s<< " " << "is present at location: "<<j<<endl;
+c++;
+flag =1;
+    }
+}
+
+if( flag ==0)
+{
+    cout<< "The element"<< " "<< s << " "<< "is not present in the given array";
+}
+else
+{
+    cout << "The element" << " "<< s << " "<< "occurs"<< " "<< c << " "<< "times.";
+}
+return 0;
+}
+
+//Output
+/*
+Enter the number of elements: 5
+Enter array elements: 1
+2
+3
+4
+5
+Enter an element to be searched in an array: 3
+The element 3 is present at location: 2
+The element 3 occurs 1 times.
+*/
