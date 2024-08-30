@@ -192,6 +192,43 @@ int main()
     cout<<"The maximum value of the array is: "<<max<<endl;
     return 0;
 }
+
+//Program 4 (Number of occurences)
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n, i, j, s, c = 0, flag = 0;
+cout << "Enter the number of elements: ";
+cin >> n;
+int a[n];
+cout << "Enter array elements: ";
+for( i = 0; i<n ; i++)
+{
+    cin >> a[i];
+}
+cout << "Enter an element to be searched in an array: ";
+    cin >> s;
+for (j= 0 ; j<n; j++)
+{
+    if ( a[j]==s)
+    {
+cout<< "The element"<<" "<< s<< " " << "is present at location: "<<j<<endl;
+c++;
+flag =1;
+    }
+}
+
+if( flag ==0)
+{
+    cout<< "The element"<< " "<< s << " "<< "is not present in the given array";
+}
+else
+{
+    cout << "The element" << " "<< s << " "<< "occurs"<< " "<< c << " "<< "times.";
+}
+return 0;
+}
 ~~~
 
 # Conclusion
@@ -225,3 +262,6 @@ We also learn about arrays in C++, how to find out position of elements, min and
 
 ### Program 3 (Min and max value in an array):
 ![image](https://github.com/user-attachments/assets/95712dc5-2ab6-42d6-b979-49d7a2a14d80)
+
+### Program 4 (Occurences)
+![image](https://github.com/user-attachments/assets/70bbbad7-c1c2-4ac8-8e30-eec417917a39)
