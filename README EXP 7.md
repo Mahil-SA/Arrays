@@ -106,7 +106,51 @@ int main()
 }
 
 //Experiment 7.1
-//Program 1 (To search the position of an element in an array.)
+//Program 1 (Display array)
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,i,j;
+    cout<<"Enter the number of elements you want to enter : ";
+    cin>>s;
+    int a[s];
+    for(i=0;i<=s-1;i++)
+    {
+        cout<<"Enter element no "<<i+1<<" ";
+        cin>>a[i];
+    }
+    cout<<"The elements of the array are: ";
+    for(j=0;j<=s-1;j++)
+    {
+    cout<<a[j];
+    }
+    return 0;
+}
+
+//Program 2 (Print reverse array)
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,i,j;
+    cout<<"Enter the number of elements you want to enter : ";
+    cin>>s;
+    int a[s];
+    for(i=0;i<=s-1;i++)
+    {
+        cout<<"Enter element no "<<i+1<<" ";
+        cin>>a[i];
+    }
+    cout<<"The reversed elements of the array are: ";
+    for(j=s-1;j>=0;j--)
+    {
+    cout<<" "<<a[j];
+    }
+    return 0;
+}
+
+//Program 3 (To search the position of an element in an array.)
 #include<iostream>
 using namespace std;
 int main()
@@ -131,7 +175,7 @@ int main()
     }
 }
 
-//Program 2 (To find the sum and average of a given array.)
+//Program 4 (To find the sum and average of a given array.)
 #include<iostream>
 using namespace std;
 int main()
@@ -158,7 +202,7 @@ int main()
     cout<<"The average of the elements in the given array is "<<avg<<endl;
 }
 
-//Program 3 (To find maximum and minimum element in an array.)
+//Program 5 (To find maximum and minimum element in an array.)
 #include<iostream>
 using namespace std;
 int main()
@@ -193,7 +237,7 @@ int main()
     return 0;
 }
 
-//Program 4 (Number of occurences)
+//Program 6 (Number of occurences)
 #include<iostream>
 using namespace std;
 int main()
@@ -254,14 +298,20 @@ We also learn about arrays in C++, how to find out position of elements, min and
 
 ## Experiment 7.1:
 
-### Program 1 (Search Elements):
+### Program 1 (Display array)
+![image](https://github.com/user-attachments/assets/bd78bf2c-da0c-4454-a87e-6f680d6369a3)
+
+### Program 2 (Display reversed array)
+![image](https://github.com/user-attachments/assets/1575e4ba-6cdf-4dc7-9fdc-af0da12ee1cb)
+
+### Program 3 (Search Elements):
 ![image](https://github.com/user-attachments/assets/16f51e09-257b-467d-b643-a5d5a7daa9e7)
 
-### Program 2 (Sum and Average of elements):
+### Program 4 (Sum and Average of elements):
 ![image](https://github.com/user-attachments/assets/6d8d8b19-8402-4f28-88d1-32d4b1c6f365)
 
-### Program 3 (Min and max value in an array):
+### Program 5 (Min and max value in an array):
 ![image](https://github.com/user-attachments/assets/95712dc5-2ab6-42d6-b979-49d7a2a14d80)
 
-### Program 4 (Occurences)
+### Program 6 (Occurences)
 ![image](https://github.com/user-attachments/assets/70bbbad7-c1c2-4ac8-8e30-eec417917a39)
