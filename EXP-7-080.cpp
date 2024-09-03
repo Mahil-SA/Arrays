@@ -95,7 +95,71 @@ The entered string is not a palindrome.
 //Experiment 7.1
 //Arrays
 
-//Program 1 (To search the position of an element in an array.)
+//Program 1 (Display array)
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,i,j;
+    cout<<"Enter the number of elements you want to enter : ";
+    cin>>s;
+    int a[s];
+    for(i=0;i<=s-1;i++)
+    {
+        cout<<"Enter element no "<<i+1<<" ";
+        cin>>a[i];
+    }
+    cout<<"The elements of the array are: ";
+    for(j=0;j<=s-1;j++)
+    {
+    cout<<a[j];
+    }
+    return 0;
+}
+
+//Output
+/*
+Enter the number of elements you want to enter : 4
+Enter element no 1 1
+Enter element no 2 4
+Enter element no 3 2
+Enter element no 4 5
+The elements of the array are: 1425
+*/
+
+//Program 2 (Print reverse array)
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,i,j;
+    cout<<"Enter the number of elements you want to enter : ";
+    cin>>s;
+    int a[s];
+    for(i=0;i<=s-1;i++)
+    {
+        cout<<"Enter element no "<<i+1<<" ";
+        cin>>a[i];
+    }
+    cout<<"The reversed elements of the array are: ";
+    for(j=s-1;j>=0;j--)
+    {
+    cout<<" "<<a[j];
+    }
+    return 0;
+}
+
+//Output
+/*
+Enter the number of elements you want to enter : 4
+Enter element no 1 1
+Enter element no 2 5
+Enter element no 3 3
+Enter element no 4 7
+The reversed elements of the array are:  7 3 5 1
+*/
+
+//Program 3 (To search the position of an element in an array.)
 #include<iostream>
 using namespace std;
 int main()
@@ -130,7 +194,7 @@ Enter the elements to be searced: 2
 The position of the element is: 1
 */
 
-//Program 2 (To find the sum and average of a given array.)
+//Program 4 (To find the sum and average of a given array.)
 #include<iostream>
 using namespace std;
 int main()
@@ -165,7 +229,7 @@ The sum of the given array is 19
 The average of the elements in the given array is 4.75
 */
 
-//Program 3 (To find maximum and minimum element in an array.)
+//Program 5 (To find maximum and minimum element in an array.)
 #include<iostream>
 using namespace std;
 int main()
@@ -208,7 +272,7 @@ The minimum value of the array is: 1
 The maximum value of the array is: 7
 */
 
-//Program 4 (Number of occurences)
+//Program 6 (Number of occurences)
 #include<iostream>
 using namespace std;
 int main()
